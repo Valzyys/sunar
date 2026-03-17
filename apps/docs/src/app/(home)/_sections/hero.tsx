@@ -1,4 +1,12 @@
-import { CommandIcon, FolderTreeIcon, GlobeIcon, type LucideIcon, MousePointerClickIcon, ScaleIcon, TypeIcon } from "lucide-react";
+import { 
+    RadioIcon, 
+    UsersIcon, 
+    CalendarIcon, 
+    NewspaperIcon, 
+    PlayCircleIcon, 
+    Code2Icon, 
+    type LucideIcon 
+} from "lucide-react";
 import Link from "next/link";
 
 import { FancyButton } from "@/components/fancy-button";
@@ -34,12 +42,12 @@ export function HomeHeroSection() {
             />
 
             <h1 className="relative text-balance font-medium text-4xl text-fd-foreground text-shadow-lg tracking-tight">
-                Make overpowered discord bots
+                The ultimate JKT48 data platform
             </h1>
 
             <p className="relative max-w-5xl text-balance text-fd-foreground/80 text-shadow-lg sm:text-lg md:text-xl lg:text-xl">
-                Sunar emerges as a finely-tuned discord.js framework, meticulously engineered to prioritize{" "}
-                <span className="text-fd-foreground">ease of use and efficiency</span>.
+                JKT48Connect provides the most comprehensive REST API for JKT48 data, delivering{" "}
+                <span className="text-fd-foreground">real-time updates and seamless integration</span> for developers and fans alike.
             </p>
 
             <div className="relative mt-2 flex items-center gap-x-2">
@@ -49,23 +57,23 @@ export function HomeHeroSection() {
             </div>
 
             <div className="-z-10 relative mt-10 grid grid-cols-1 overflow-hidden sm:grid-cols-2 md:grid-cols-3 md:gap-8">
-                <Highlight title="Easy-to-Use" icon={MousePointerClickIcon}>
-                    Simple, readable API for quick Discord bot development.
+                <Highlight title="Live Streaming" icon={RadioIcon}>
+                    Real-time live data from IDN Live, Showroom, and YouTube with chat stream support.
                 </Highlight>
-                <Highlight title="Fully Typed" icon={TypeIcon}>
-                    Strong type definitions for seamless JS and TS support.
+                <Highlight title="Member Data" icon={UsersIcon}>
+                    Complete member profiles, birthdays, and statistics from JKT48, JKT48V, and trainees.
                 </Highlight>
-                <Highlight title="Lightweight" icon={ScaleIcon}>
-                    Optimized for performance with essential features only.
+                <Highlight title="Theater Schedule" icon={CalendarIcon}>
+                    Up-to-date theater schedules, setlists, and ticket information.
                 </Highlight>
-                <Highlight title="Versatile" icon={CommandIcon}>
-                    Supports slash commands, context menus, and more.
+                <Highlight title="News & Events" icon={NewspaperIcon}>
+                    Latest news, off-air events, and official announcements from JKT48.
                 </Highlight>
-                <Highlight title="Open Source" icon={GlobeIcon}>
-                    Community-driven and customizable open-source project.
+                <Highlight title="Replays" icon={PlayCircleIcon}>
+                    Access to theater replays, live streaming archives, and video content.
                 </Highlight>
-                <Highlight title="Structured Code" icon={FolderTreeIcon}>
-                    Promotes clean, scalable, and maintainable architecture.
+                <Highlight title="Developer Friendly" icon={Code2Icon}>
+                    TypeScript support with official npm package @jkt48/core and Discord bot integration.
                 </Highlight>
             </div>
         </section>
