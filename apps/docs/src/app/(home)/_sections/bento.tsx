@@ -74,25 +74,25 @@ interface LiveItem {
 let liveEvents: LiveItem[] = [
     {
         name: "IDN Live",
-        description: "Streaming from IDN platform",
+        description: "Live member from IDN platform",
         icon: "📱",
         color: "#FF6B35",
     },
     {
         name: "Showroom",
-        description: "Live from Showroom Live",
+        description: "Live member from Showroom Live",
         icon: "🎪",
         color: "#00C9A7",
     },
     {
         name: "YouTube Live",
-        description: "YouTube live streaming",
+        description: "JKT48V YouTube live streaming",
         icon: "📺",
         color: "#FF0000",
     },
     {
-        name: "Member Online",
-        description: "Member is currently live",
+        name: "List Member",
+        description: "List all member",
         icon: "🔴",
         color: "#FF3D71",
     },
@@ -109,8 +109,8 @@ let liveEvents: LiveItem[] = [
         color: "#FFB800",
     },
     {
-        name: "Birthday Alert",
-        description: "Member birthday notifications",
+        name: "Birthday",
+        description: "Member birthday",
         icon: "🎂",
         color: "#FF69B4",
     },
