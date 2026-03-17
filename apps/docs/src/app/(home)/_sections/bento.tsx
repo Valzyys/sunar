@@ -15,7 +15,7 @@ const cards: BentoCardProps[] = [
         background: (
             <div className="absolute top-0 scale-200 transition-all duration-200 ease-in-out [--duration:20s] [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-[103%] md:scale-106 dark:top-2 dark:md:scale-111">
                 <Image
-                    src="https://files.catbox.moe/9ln4f7.png"
+                    src="https://files.catbox.moe/5eygui.webp"
                     alt="Application Commands"
                     className="transition-opacity duration-200 group-hover:opacity-100 dark:opacity-75 dark:group-hover:opacity-75"
                     width={3163}
