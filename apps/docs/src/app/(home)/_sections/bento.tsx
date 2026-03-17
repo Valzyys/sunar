@@ -15,7 +15,7 @@ const cards: BentoCardProps[] = [
         background: (
             <div className="absolute top-0 scale-200 transition-all duration-200 ease-in-out [--duration:20s] [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-[103%] md:scale-106 dark:top-2 dark:md:scale-111">
                 <Image
-                    src="https://files.catbox.moe/5eygui.webp"
+                    src="https://cdn.discordapp.com/attachments/1311489646538260490/1483459657577136302/nth.webp?ex=69baaaf7&is=69b95977&hm=d928b54cefcd6364518608b72ef857028a15ddd591d582728525989e86bf773d&"
                     alt="Application Commands"
                     className="transition-opacity duration-200 group-hover:opacity-100 dark:opacity-75 dark:group-hover:opacity-75"
                     width={3163}
