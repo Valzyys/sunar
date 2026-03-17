@@ -10,7 +10,7 @@ export function middleware(request: NextRequest) {
     const isLocalHost = requestedHost?.startsWith("localhost:");
 
     if (isProduction && requestedHost && !isLocalHost && !requestedHost.match(SUNAR_HOST_REGEX)) {
-        const host = "sunar.js.org";
+        const host = "test.jkt48connect.com";
 
         const requestedPort = request.headers.get("X-Forwarded-Port");
         const requestedProto = request.headers.get("X-Forwarded-Proto");
