@@ -12,7 +12,7 @@ export function HomeCTASection() {
         <section className="group relative w-full overflow-hidden rounded-2xl border">
             <BackgroundRipple />
             <div className="flex flex-col items-center justify-center gap-y-6 py-15">
-                <SunarIcon className="-z-30 -translate-x-1/2 -top-20 md:-top-32 absolute left-1/2 size-120 text-fd-accent md:size-180" />
+                <SunarIcon className="-z-30 -translate-x-1/2 -top-60 md:-top-82 absolute left-1/2 size-120 text-fd-accent md:size-180" />
                 <h2 className="relative z-10 font-medium text-2xl text-shadow-lg tracking-tight md:text-4xl">
                     Start creating your bot now.
                 </h2>
