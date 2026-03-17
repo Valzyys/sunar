@@ -8,7 +8,7 @@ import { cn } from "@/utils/cn";
 const cards: BentoCardProps[] = [
     {
         name: "Discord Bot",
-        description: "Bot Discord resmi JKT48Connect untuk notifikasi live member, berita terbaru, dan update real-time dari IDN Live & Showroom langsung di server Discord Anda.",
+        description: "Official JKT48Connect Discord bot for live member notifications, latest news, and real-time updates from IDN Live & Showroom directly in your Discord server.",
         href: "https://top.gg/bot/1305141693477027891",
         cta: "Add to Discord",
         className: "col-span-3 bg-fd-muted-foreground/5",
@@ -26,7 +26,7 @@ const cards: BentoCardProps[] = [
     },
     {
         name: "Live Streaming",
-        description: "Akses data real-time live member JKT48 dari IDN Live dan Showroom dengan informasi lengkap mulai dari URL streaming, chat room, hingga status live.",
+        description: "Access real-time JKT48 member live data from IDN Live and Showroom with complete information from streaming URLs, chat rooms, to live status.",
         href: "/docs/live",
         cta: "Learn More",
         className: "col-span-3 md:col-span-1",
@@ -34,7 +34,7 @@ const cards: BentoCardProps[] = [
     },
     {
         name: "REST API",
-        description: "API lengkap untuk data member, jadwal teater, event, berita, replay, dan birthday. Tersedia package npm @jkt48/core dengan TypeScript support.",
+        description: "Complete API for member data, theater schedules, events, news, replays, and birthdays. npm package @jkt48/core available with TypeScript support.",
         href: "/docs/api",
         cta: "View Documentation",
         className: "col-span-3 md:col-span-2 bg-fd-muted-foreground/5",
@@ -74,49 +74,49 @@ interface LiveItem {
 let liveEvents: LiveItem[] = [
     {
         name: "IDN Live",
-        description: "Streaming dari platform IDN",
+        description: "Streaming from IDN platform",
         icon: "📱",
         color: "#FF6B35",
     },
     {
         name: "Showroom",
-        description: "Live dari Showroom Live",
+        description: "Live from Showroom Live",
         icon: "🎪",
         color: "#00C9A7",
     },
     {
         name: "YouTube Live",
-        description: "Live streaming YouTube",
+        description: "YouTube live streaming",
         icon: "📺",
         color: "#FF0000",
     },
     {
         name: "Member Online",
-        description: "Member sedang live",
+        description: "Member is currently live",
         icon: "🔴",
         color: "#FF3D71",
     },
     {
         name: "Chat Stream",
-        description: "Akses chat real-time",
+        description: "Access real-time chat",
         icon: "💬",
         color: "#1E86FF",
     },
     {
         name: "Theater Schedule",
-        description: "Jadwal pertunjukan teater",
+        description: "Theater performance schedule",
         icon: "🎭",
         color: "#FFB800",
     },
     {
         name: "Birthday Alert",
-        description: "Notifikasi ulang tahun member",
+        description: "Member birthday notifications",
         icon: "🎂",
         color: "#FF69B4",
     },
     {
         name: "News Update",
-        description: "Berita terbaru JKT48",
+        description: "Latest JKT48 news",
         icon: "📰",
         color: "#8B5CF6",
     },
