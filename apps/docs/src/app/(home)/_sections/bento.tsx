@@ -7,16 +7,16 @@ import { cn } from "@/utils/cn";
 
 const cards: BentoCardProps[] = [
     {
-        name: "Application Commands",
-        description: "Offer an organized and intuitive way for users to interact with bots through slash commands and context menus.",
-        href: "/docs/guides/registering-commands",
-        cta: "Learn More",
+        name: "Discord Bot",
+        description: "Bot Discord resmi JKT48Connect untuk notifikasi live member, berita terbaru, dan update real-time dari IDN Live & Showroom langsung di server Discord Anda.",
+        href: "https://top.gg/bot/1305141693477027891",
+        cta: "Add to Discord",
         className: "col-span-3 bg-fd-muted-foreground/5",
         background: (
             <div className="absolute top-0 scale-200 transition-all duration-200 ease-in-out [--duration:20s] [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-[103%] md:scale-106 dark:top-2 dark:md:scale-111">
                 <Image
                     src="https://discord.com/assets/dbe5e2df368cca02.webp"
-                    alt="Application Commands"
+                    alt="JKT48Connect Discord Bot"
                     className="transition-opacity duration-200 group-hover:opacity-100 dark:opacity-75 dark:group-hover:opacity-75"
                     width={3163}
                     height={811}
@@ -25,24 +25,24 @@ const cards: BentoCardProps[] = [
         ),
     },
     {
-        name: "Signals",
-        description: "Handle events to enable responsive bot behavior in real time.",
-        href: "/docs/guides/working-with-signals",
+        name: "Live Streaming",
+        description: "Akses data real-time live member JKT48 dari IDN Live dan Showroom dengan informasi lengkap mulai dari URL streaming, chat room, hingga status live.",
+        href: "/docs/live",
         cta: "Learn More",
         className: "col-span-3 md:col-span-1",
-        background: <SignalsAnimatedList />,
+        background: <LiveAnimatedList />,
     },
     {
-        name: "Components",
-        description: "Interactive elements including buttons, select menus, and modals for richer bot interactions.",
-        href: "/docs/guides/using-components",
-        cta: "Learn More",
+        name: "REST API",
+        description: "API lengkap untuk data member, jadwal teater, event, berita, replay, dan birthday. Tersedia package npm @jkt48/core dengan TypeScript support.",
+        href: "/docs/api",
+        cta: "View Documentation",
         className: "col-span-3 md:col-span-2 bg-fd-muted-foreground/5",
         background: (
             <div className="absolute scale-200 transition-all duration-200 ease-in-out [--duration:20s] [mask-image:linear-gradient(to_top,transparent_10%,#000_90%)] group-hover:scale-[150%] dark:bg-transparent">
                 <Image
                     src="https://discord.com/assets/b43a0de66e70d08e.webp"
-                    alt="Components"
+                    alt="JKT48Connect REST API"
                     className="transition-opacity duration-200 group-hover:opacity-80 dark:opacity-75"
                     width={4863}
                     height={1348}
@@ -64,67 +64,67 @@ export function HomeBentoSection() {
     );
 }
 
-interface EventItem {
+interface LiveItem {
     name: string;
     description: string;
     icon: string;
     color: string;
 }
 
-let events: EventItem[] = [
+let liveEvents: LiveItem[] = [
     {
-        name: "Ready",
-        description: "The bot is ready to serve",
-        icon: "🤖",
-        color: "#FFB800",
+        name: "IDN Live",
+        description: "Streaming dari platform IDN",
+        icon: "📱",
+        color: "#FF6B35",
     },
     {
-        name: "Guild Member Add",
-        description: "New member joined the guild",
-        icon: "📥",
+        name: "Showroom",
+        description: "Live dari Showroom Live",
+        icon: "🎪",
         color: "#00C9A7",
     },
     {
-        name: "Message Delete",
-        description: "A message was deleted",
-        icon: "💬",
+        name: "YouTube Live",
+        description: "Live streaming YouTube",
+        icon: "📺",
+        color: "#FF0000",
+    },
+    {
+        name: "Member Online",
+        description: "Member sedang live",
+        icon: "🔴",
         color: "#FF3D71",
     },
     {
-        name: "Message Reaction Add",
-        description: "A reaction was added to a message",
-        icon: "👍",
+        name: "Chat Stream",
+        description: "Akses chat real-time",
+        icon: "💬",
         color: "#1E86FF",
     },
     {
-        name: "Message Reaction Removed",
-        description: "A reaction was removed from a message",
-        icon: "👎",
-        color: "#FF3D71",
-    },
-    {
-        name: "Guild Member Remove",
-        description: "A member left the guild",
-        icon: "📤",
-        color: "#FF3D71",
-    },
-    {
-        name: "Guild Member Update",
-        description: "A member's information was updated",
-        icon: "📝",
-        color: "#00C9A7",
-    },
-    {
-        name: "Guild Member Ban",
-        description: "A member was banned from the guild",
-        icon: "🚫",
+        name: "Theater Schedule",
+        description: "Jadwal pertunjukan teater",
+        icon: "🎭",
         color: "#FFB800",
+    },
+    {
+        name: "Birthday Alert",
+        description: "Notifikasi ulang tahun member",
+        icon: "🎂",
+        color: "#FF69B4",
+    },
+    {
+        name: "News Update",
+        description: "Berita terbaru JKT48",
+        icon: "📰",
+        color: "#8B5CF6",
     },
 ];
 
-events = Array.from({ length: 10 }, () => events).flat();
+liveEvents = Array.from({ length: 10 }, () => liveEvents).flat();
 
-function Event({ name, description, icon, color }: EventItem) {
+function LiveEvent({ name, description, icon, color }: LiveItem) {
     return (
         <figure
             className={cn(
@@ -157,12 +157,12 @@ function Event({ name, description, icon, color }: EventItem) {
     );
 }
 
-function SignalsAnimatedList() {
+function LiveAnimatedList() {
     return (
         <div className="absolute top-0 left-0 flex h-[300px] w-full scale-95 flex-col overflow-hidden border-none p-2 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90 md:scale-80">
             <AnimatedList delay={2000}>
-                {events.map((item, index) => (
-                    <Event {...item} key={`${item.name}-${index}`} />
+                {liveEvents.map((item, index) => (
+                    <LiveEvent {...item} key={`${item.name}-${index}`} />
                 ))}
             </AnimatedList>
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background" />
