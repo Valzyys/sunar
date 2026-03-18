@@ -6,14 +6,14 @@ export function createMetadata(override: Metadata): Metadata {
         openGraph: {
             title: override.title ?? undefined,
             description: override.description ?? undefined,
-            url: "https://sunar.js.org",
+            url: "https://docs.jkt48connect.com",
             images: "/banner.png",
-            siteName: "Sunar",
+            siteName: "JKT48Connect Docs",
             ...override.openGraph,
         },
         twitter: {
             card: "summary_large_image",
-            creator: "@ussego",
+            creator: "@valzyys",
             title: override.title ?? undefined,
             description: override.description ?? undefined,
             images: "/banner.png",
